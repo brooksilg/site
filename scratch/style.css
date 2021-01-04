@@ -1,0 +1,102 @@
+:root{
+  /* COLORS */
+  --light-fg-primary: #222;
+  --light-bg-primary: #fff;
+  --dark-fg-primary: #eee;
+  --dark-bg-primary: #111;
+
+  /* TRANSITIONS */
+  --duration-default: 500ms;
+}
+
+body {
+  --bg-primary: var(--light-bg-primary);
+  --fg-primary: var(--light-fg-primary);
+  padding: 30px;
+  background: var(--bg-primary);
+  color: var(--fg-primary);
+  font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
+}
+body.transition-ready {
+  transition: background var(--duration-default),
+              color var(--duration-default);
+}
+body.body--dark {
+  --bg-primary: var(--dark-bg-primary);
+  --fg-primary: var(--dark-fg-primary);
+}
+
+.link {
+  cursor: pointer;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+}
+
+.box {
+  position: absolute;
+  border: 2px solid;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  left: -12px;
+  top: -12px;
+  transform-origin: center;
+  transition: transform var(--duration-default) 0ms,
+              width var(--duration-default) var(--duration-default),
+              height var(--duration-default) var(--duration-default),
+              left var(--duration-default) 0ms,
+              top var(--duration-default) var(--duration-default);
+}
+
+.full-name {
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 1em;
+  transition: opacity calc(2*var(--duration-default)) calc(2*var(--duration-default)), 
+              visibility 0ms calc(2*var(--duration-default));
+}
+.name--last {
+  font-weight: 600;
+}
+
+.logo.active .box {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  top: -5px;
+  transition: transform var(--duration-default) calc(2*var(--duration-default)),
+              width var(--duration-default) var(--duration-default),
+              height var(--duration-default) var(--duration-default),
+              left var(--duration-default) calc(2*var(--duration-default)),
+              top var(--duration-default) var(--duration-default);
+}
+.logo.active .box--right {
+  left: 2px;
+}
+
+.logo.active .full-name {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-default) 0ms, 
+              visibility 0ms var(--duration-default);
+}
+
+.dark-toggle {
+  margin-top: 60px;
+}
+.dark-toggle::after {
+  content: ": off";
+}
+.body--dark .dark-toggle::after {
+  content: ": on";
+}
+
+@media (prefers-color-scheme: dark) {
+  /* TODO: Fix redundancy */
+  body.body--dark {
+    --bg-primary: var(--dark-bg-primary);
+    --fg-primary: var(--dark-fg-primary);
+  }
+}
