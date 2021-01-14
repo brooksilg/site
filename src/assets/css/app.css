@@ -1,0 +1,53 @@
+:root{
+  /* COLORS */
+  --light-fg-primary:     #222;
+  --light-fg-primary-alt: #444;
+  --light-bg-primary:     #fff;
+  --dark-fg-primary:      #ddd;
+  --dark-fg-primary--alt: #fff;
+  --dark-bg-primary:      #111;
+
+  /* TRANSITIONS */
+  --duration-default: 500ms;
+}
+
+html {
+  font-size: 20px;
+}
+
+h1,h2,h3,h4,p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+h1,h2,h3,h4 {
+  @apply font-sans;
+}
+h1 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-2xl;
+}
+h3 {
+  @apply text-xl;
+}
+h4 {
+  @apply text-lg;
+}
+p {
+  @apply font-serif;
+  @apply text-base;
+}
+
+article a {
+  @apply underline;
+}
+article ul {
+  @apply pl-2;
+  @apply ml-2;
+  @apply border-l;
+  @apply border-dashed;
+}
+article ul li {
+  @apply m-2;
+}
