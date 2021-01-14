@@ -1,7 +1,6 @@
 <template>
   <main class="resume h-full flex-grow">
     <article class="container max-w-3xl p-8 md:px-16 md:grid md:grid-cols-3 md:gap-x-4 gap-y-8">
-      <!-- eslint-disable max-len -->
       <div>
         <h2 class="mt-0" id="booking-com">Booking.com</h2>
         <p>
@@ -59,7 +58,11 @@
       </div>
       <div>
         <h2 class="mt-0" id="ilg-dsn">ILG.DSN</h2>
-        <p>San Luis Obispo, CA / www.brooksilg.com (hey, that&#39;s me)</p>
+        <p>
+          San Luis Obispo, CA
+          <br>
+          <a target="_blank" href="https://brooksilg.com/">brooksilg.com</a>
+        </p>
       </div>
       <div class="col-span-2">
         <h3 class="mt-0" id="web-developer-_-2011-mar-ndash-2013-jul-_">Web Developer <em>(2011 &ndash; 2013)</em></h3>
@@ -67,14 +70,17 @@
       </div>
       <div>
         <h2 class="mt-0" id="digital-foundation">Digital Foundation</h2>
-        <p>San Luis Obispo, CA / permanently closed</p>
+        <p>
+          San Luis Obispo, CA
+          <br>
+          permanently closed
+        </p>
       </div>
       <div class="col-span-2">
         <h3 class="mt-0" id="desktop-support-technician-_-2011-jan-ndash-2013-may-_">Desktop Support Technician <em>(2011 &ndash; 2013)</em></h3>
         <p>Built strong customer service skills by supporting IT clients. Gathered and
         fulfilled needs and expectations of clients who work in demanding professional environments. Developed project and task management skills as part of a team.</p>
       </div>
-      <!-- eslint-enable max-len -->
     </article>
   </main>
 </template>

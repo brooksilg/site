@@ -1,7 +1,6 @@
 <template>
   <main class="about h-full flex-grow ">
     <article class="container max-w-3xl p-8 md:px-16 text-justify">
-      <!-- eslint-disable max-len -->
       <img
         src="~@/assets/img/brooks-ilg-portrait.jpg"
         alt="Brooks Ilg"
@@ -38,15 +37,7 @@
             height="1em"
           />
         </a>
-        <!-- <a href="https://www.last.fm/user/bla_nk" target="_blank">
-          <LastfmIcon
-            class="fill-current"
-            width="1em"
-            height="1em"
-          />
-        </a> -->
       </div>
-      <!-- eslint-enable max-len -->
     </article>
   </main>
 </template>
@@ -54,7 +45,6 @@
 <script>
 import GitHubIcon from '@/assets/svg/github.svg';
 import InstagramIcon from '@/assets/svg/instagram.svg';
-// import LastfmIcon from '@/assets/svg/lastfm.svg';
 
 export default {
   name: 'About',
