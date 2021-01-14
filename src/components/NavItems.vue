@@ -89,7 +89,7 @@ export default {
   cursor: pointer;
   border-bottom: 2px solid;
   border-color: transparent;
-  transition: border-color var(--duration-default), margin-top var(--duration-default) 1ms;
+  transition: border-color var(--duration-default), margin-top var(--duration-default);
 }
 .main-nav .router-link-exact-active {
   border-color: var(--fg-primary);
