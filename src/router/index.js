@@ -2,7 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import About from '@/views/About.vue';
 import Home from '@/views/Home.vue';
-import Resume from '@/views/Resume.vue';
+import Experience from '@/views/Experience.vue';
+import Page404 from '@/views/Page404.vue';
 
 Vue.use(VueRouter);
 
@@ -18,9 +19,13 @@ const routes = [
     component: About,
   },
   {
-    path: '/resume',
-    name: 'Resume',
-    component: Resume,
+    path: '/experience',
+    name: 'Experience',
+    component: Experience,
+  },
+  {
+    path: '*',
+    component: Page404,
   },
 ];
 

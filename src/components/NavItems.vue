@@ -32,7 +32,7 @@
       </router-link>
       <router-link
         class="nav-item"
-        to="/resume"
+        to="/experience"
       >
         Experience
       </router-link>

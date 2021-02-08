@@ -47,6 +47,8 @@ article ul {
   @apply ml-2;
   @apply border-l;
   @apply border-dashed;
+  border-color: var(--fg-primary);
+  transition: border var(--duration-default);
 }
 article ul li {
   @apply m-2;

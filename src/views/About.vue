@@ -14,8 +14,6 @@
         I strive to be proficient and pragmatic in my craft.
       </p>
       <p class="font-serif text-md md:text-xl">
-        I write mainly in JavaScript, and greatly enjoy working with Vue.js. My programming style is adaptive, but when possible I like to incorporate the ideas and simplicities of Functional Programming.
-      <p class="font-serif text-md md:text-xl">
         You can find me enjoying the things that inspire and fuel me:
         <a href="https://youtu.be/3tmTZ3hNB38" target="_blank">drumming</a>,
         tinkering, oat milk, open-source software, grindcore,
